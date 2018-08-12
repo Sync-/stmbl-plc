@@ -1,0 +1,94 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L regul:LD3985G33R_TSOT23 U?
+U 1 1 5BAEB5FF
+P 5050 3250
+AR Path="/5BAEB5FF" Ref="U?"  Part="1" 
+AR Path="/5BAEB4FB/5BAEB5FF" Ref="U4"  Part="1" 
+F 0 "U4" H 5050 3592 50  0000 C CNN
+F 1 "LD3985G33R_TSOT23" H 5050 3501 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 5050 3575 50  0001 C CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00003395.pdf" H 5050 3300 50  0001 C CNN
+	1    5050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L regul:AP1117-33 U?
+U 1 1 5BAEB606
+P 6550 3150
+AR Path="/5BAEB606" Ref="U?"  Part="1" 
+AR Path="/5BAEB4FB/5BAEB606" Ref="U5"  Part="1" 
+F 0 "U5" H 6550 3392 50  0000 C CNN
+F 1 "AP1117-33" H 6550 3301 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 6550 3350 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 6650 2900 50  0001 C CNN
+	1    6550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:+24V #PWR?
+U 1 1 5BAEB60D
+P 3300 3150
+AR Path="/5BAEB60D" Ref="#PWR?"  Part="1" 
+AR Path="/5BAEB4FB/5BAEB60D" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 3300 3000 50  0001 C CNN
+F 1 "+24V" H 3315 3323 50  0000 C CNN
+F 2 "" H 3300 3150 50  0000 C CNN
+F 3 "" H 3300 3150 50  0000 C CNN
+	1    3300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BAEB613
+P 7050 3150
+AR Path="/5BAEB613" Ref="#PWR?"  Part="1" 
+AR Path="/5BAEB4FB/5BAEB613" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 7050 3000 50  0001 C CNN
+F 1 "+3.3V" H 7065 3323 50  0000 C CNN
+F 2 "" H 7050 3150 50  0001 C CNN
+F 3 "" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5BAEB619
+P 5550 3150
+AR Path="/5BAEB619" Ref="#PWR?"  Part="1" 
+AR Path="/5BAEB4FB/5BAEB619" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 5550 3000 50  0001 C CNN
+F 1 "+3.3VA" H 5565 3323 50  0000 C CNN
+F 2 "" H 5550 3150 50  0001 C CNN
+F 3 "" H 5550 3150 50  0001 C CNN
+	1    5550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BAEB61F
+P 3850 3150
+AR Path="/5BAEB61F" Ref="#PWR?"  Part="1" 
+AR Path="/5BAEB4FB/5BAEB61F" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 3850 3000 50  0001 C CNN
+F 1 "+5V" H 3865 3323 50  0000 C CNN
+F 2 "" H 3850 3150 50  0001 C CNN
+F 3 "" H 3850 3150 50  0001 C CNN
+	1    3850 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
