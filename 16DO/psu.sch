@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:16do-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L regul:LD3985G33R_TSOT23 U?
+L Regulator_Linear:LD3985G33R_TSOT23 U?
 U 1 1 5BAEB5FF
 P 5050 3250
 AR Path="/5BAEB5FF" Ref="U?"  Part="1" 
@@ -27,7 +28,7 @@ F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DAT
 	1    0    0    -1  
 $EndComp
 $Comp
-L regul:AP1117-33 U?
+L Regulator_Linear:AZ1117-3.3 U?
 U 1 1 5BAEB606
 P 6550 3150
 AR Path="/5BAEB606" Ref="U?"  Part="1" 

@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:16do-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -66,16 +67,25 @@ F 3 "" H 3950 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stmbl:SI8621 U?
-U 1 1 5BAED472
-P 6000 3200
-AR Path="/5BAED472" Ref="U?"  Part="1" 
-AR Path="/5BAECEF3/5BAED472" Ref="U8"  Part="1" 
-F 0 "U8" H 6891 3228 60  0000 L CNN
-F 1 "SI8621" H 6891 3122 60  0000 L CNN
-F 2 "stmbl-kicad-lib:SOIC-8-N" H 6000 3200 60  0001 C CNN
-F 3 "" H 6000 3200 60  0000 C CNN
-	1    6000 3200
+L stmbl:R R?
+U 1 1 5CB55EA4
+P 4550 3250
+F 0 "R?" H 4620 3296 50  0000 L CNN
+F 1 "R" H 4620 3205 50  0000 L CNN
+F 2 "" V 4480 3250 50  0000 C CNN
+F 3 "" H 4550 3250 50  0000 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R?
+U 1 1 5CB5640A
+P 4550 4400
+F 0 "R?" H 4620 4446 50  0000 L CNN
+F 1 "R" H 4620 4355 50  0000 L CNN
+F 2 "" V 4480 4400 50  0000 C CNN
+F 3 "" H 4550 4400 50  0000 C CNN
+	1    4550 4400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
