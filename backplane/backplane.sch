@@ -1,0 +1,1059 @@
+EESchema Schematic File Version 4
+LIBS:backplane-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J1
+U 1 1 5CCEE0E1
+P 1750 3850
+F 0 "J1" H 1800 4767 50  0000 C CNN
+F 1 "Conn_02x16_Row_Letter_First" H 1800 4676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" H 1750 3850 50  0001 C CNN
+F 3 "~" H 1750 3850 50  0001 C CNN
+	1    1750 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Row_Letter_First J2
+U 1 1 5CCEF7D2
+P 4450 3750
+F 0 "J2" H 4500 4667 50  0000 C CNN
+F 1 "Conn_02x16_Row_Letter_First" H 4500 4576 50  0000 C CNN
+F 2 "backplane:DIN41612_B2_2x16_Vertical" H 4450 3750 50  0001 C CNN
+F 3 "~" H 4450 3750 50  0001 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Row_Letter_First J3
+U 1 1 5CCF061F
+P 5800 3750
+F 0 "J3" H 5850 4667 50  0000 C CNN
+F 1 "Conn_02x16_Row_Letter_First" H 5850 4576 50  0000 C CNN
+F 2 "backplane:DIN41612_B2_2x16_Vertical" H 5800 3750 50  0001 C CNN
+F 3 "~" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Row_Letter_First J4
+U 1 1 5CCF0E22
+P 7150 3750
+F 0 "J4" H 7200 4667 50  0000 C CNN
+F 1 "Conn_02x16_Row_Letter_First" H 7200 4576 50  0000 C CNN
+F 2 "backplane:DIN41612_B2_2x16_Vertical" H 7150 3750 50  0001 C CNN
+F 3 "~" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J5
+U 1 1 5CCF158F
+P 3100 3850
+F 0 "J5" H 3150 4767 50  0000 C CNN
+F 1 "Conn_02x16_Row_Letter_First" H 3150 4676 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Horizontal" H 3100 3850 50  0001 C CNN
+F 3 "~" H 3100 3850 50  0001 C CNN
+	1    3100 3850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1550 4350 1500 4350
+Wire Wire Line
+	1500 4350 1500 4450
+Wire Wire Line
+	1500 4550 1550 4550
+Wire Wire Line
+	2050 4350 2100 4350
+Wire Wire Line
+	2100 4350 2100 4450
+Wire Wire Line
+	2100 4550 2050 4550
+Wire Wire Line
+	2050 4450 2100 4450
+Connection ~ 2100 4450
+Wire Wire Line
+	2100 4450 2100 4550
+Wire Wire Line
+	1500 4450 1550 4450
+Connection ~ 1500 4450
+Wire Wire Line
+	1500 4450 1500 4550
+Wire Wire Line
+	1550 4250 1500 4250
+Wire Wire Line
+	1500 4250 1500 4150
+Wire Wire Line
+	1500 4050 1550 4050
+Wire Wire Line
+	2050 4050 2100 4050
+Wire Wire Line
+	2100 4050 2100 4150
+Wire Wire Line
+	2100 4250 2050 4250
+Wire Wire Line
+	2050 4150 2100 4150
+Connection ~ 2100 4150
+Wire Wire Line
+	2100 4150 2100 4250
+Wire Wire Line
+	1500 4150 1550 4150
+Connection ~ 1500 4150
+Wire Wire Line
+	1500 4150 1500 4050
+$Comp
+L stmbl:+24V #PWR0101
+U 1 1 5CD10B5F
+P 1500 4150
+F 0 "#PWR0101" H 1500 4000 50  0001 C CNN
+F 1 "+24V" V 1515 4278 50  0000 L CNN
+F 2 "" H 1500 4150 50  0001 C CNN
+F 3 "" H 1500 4150 50  0001 C CNN
+	1    1500 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:+24V #PWR0102
+U 1 1 5CD1114C
+P 2100 4150
+F 0 "#PWR0102" H 2100 4000 50  0001 C CNN
+F 1 "+24V" V 2115 4278 50  0000 L CNN
+F 2 "" H 2100 4150 50  0001 C CNN
+F 3 "" H 2100 4150 50  0001 C CNN
+	1    2100 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0103
+U 1 1 5CD11A18
+P 1500 4450
+F 0 "#PWR0103" H 1500 4250 50  0001 C CNN
+F 1 "GNDPWR" V 1504 4341 50  0000 R CNN
+F 2 "" H 1500 4400 50  0001 C CNN
+F 3 "" H 1500 4400 50  0001 C CNN
+	1    1500 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0104
+U 1 1 5CD126AF
+P 2100 4450
+F 0 "#PWR0104" H 2100 4250 50  0001 C CNN
+F 1 "GNDPWR" V 2105 4342 50  0000 R CNN
+F 2 "" H 2100 4400 50  0001 C CNN
+F 3 "" H 2100 4400 50  0001 C CNN
+	1    2100 4450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1450 3050 0    50   Input ~ 0
+PIN1
+Text GLabel 1450 3150 0    50   Input ~ 0
+PIN2
+Text GLabel 1450 3250 0    50   Input ~ 0
+PIN3
+Text GLabel 1450 3350 0    50   Input ~ 0
+PIN4
+Text GLabel 1450 3450 0    50   Input ~ 0
+PIN5
+Text GLabel 1450 3550 0    50   Input ~ 0
+PIN6
+Text GLabel 1450 3650 0    50   Input ~ 0
+PIN7
+Text GLabel 1450 3750 0    50   Input ~ 0
+PIN8
+Text GLabel 1450 3850 0    50   Input ~ 0
+PIN9
+Text GLabel 1450 3950 0    50   Input ~ 0
+PIN10
+Text GLabel 2150 3050 2    50   Input ~ 0
+PIN11
+Text GLabel 2150 3150 2    50   Input ~ 0
+PIN12
+Text GLabel 2150 3250 2    50   Input ~ 0
+PIN13
+Text GLabel 2150 3350 2    50   Input ~ 0
+PIN14
+Text GLabel 2150 3450 2    50   Input ~ 0
+PIN15
+Text GLabel 2150 3550 2    50   Input ~ 0
+PIN16
+Text GLabel 2150 3650 2    50   Input ~ 0
+PIN17
+Text GLabel 2150 3750 2    50   Input ~ 0
+PIN18
+Text GLabel 2150 3850 2    50   Input ~ 0
+PIN19
+Text GLabel 2150 3950 2    50   Input ~ 0
+PIN20
+Wire Wire Line
+	1450 3050 1550 3050
+Wire Wire Line
+	1450 3150 1550 3150
+Wire Wire Line
+	1450 3250 1550 3250
+Wire Wire Line
+	1450 3350 1550 3350
+Wire Wire Line
+	1450 3450 1550 3450
+Wire Wire Line
+	1450 3550 1550 3550
+Wire Wire Line
+	1450 3650 1550 3650
+Wire Wire Line
+	1450 3750 1550 3750
+Wire Wire Line
+	1450 3850 1550 3850
+Wire Wire Line
+	1450 3950 1550 3950
+Wire Wire Line
+	2050 3050 2150 3050
+Wire Wire Line
+	2050 3150 2150 3150
+Wire Wire Line
+	2050 3250 2150 3250
+Wire Wire Line
+	2050 3350 2150 3350
+Wire Wire Line
+	2050 3450 2150 3450
+Wire Wire Line
+	2050 3550 2150 3550
+Wire Wire Line
+	2050 3650 2150 3650
+Wire Wire Line
+	2050 3750 2150 3750
+Wire Wire Line
+	2050 3850 2150 3850
+Wire Wire Line
+	2050 3950 2150 3950
+Wire Wire Line
+	2900 4350 2850 4350
+Wire Wire Line
+	2850 4350 2850 4450
+Wire Wire Line
+	2850 4550 2900 4550
+Wire Wire Line
+	2850 4450 2900 4450
+Connection ~ 2850 4450
+Wire Wire Line
+	2850 4450 2850 4550
+Wire Wire Line
+	2900 4250 2850 4250
+Wire Wire Line
+	2850 4250 2850 4150
+Wire Wire Line
+	2850 4050 2900 4050
+Wire Wire Line
+	2850 4150 2900 4150
+Connection ~ 2850 4150
+Wire Wire Line
+	2850 4150 2850 4050
+$Comp
+L stmbl:+24V #PWR0105
+U 1 1 5CD150D5
+P 2850 4150
+F 0 "#PWR0105" H 2850 4000 50  0001 C CNN
+F 1 "+24V" V 2865 4278 50  0000 L CNN
+F 2 "" H 2850 4150 50  0001 C CNN
+F 3 "" H 2850 4150 50  0001 C CNN
+	1    2850 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0106
+U 1 1 5CD150DF
+P 2850 4450
+F 0 "#PWR0106" H 2850 4250 50  0001 C CNN
+F 1 "GNDPWR" V 2854 4341 50  0000 R CNN
+F 2 "" H 2850 4400 50  0001 C CNN
+F 3 "" H 2850 4400 50  0001 C CNN
+	1    2850 4450
+	0    1    1    0   
+$EndComp
+Text GLabel 2800 3050 0    50   Input ~ 0
+PIN1
+Text GLabel 2800 3150 0    50   Input ~ 0
+PIN2
+Text GLabel 2800 3250 0    50   Input ~ 0
+PIN3
+Text GLabel 2800 3350 0    50   Input ~ 0
+PIN4
+Text GLabel 2800 3450 0    50   Input ~ 0
+PIN5
+Text GLabel 2800 3550 0    50   Input ~ 0
+PIN6
+Text GLabel 2800 3650 0    50   Input ~ 0
+PIN7
+Text GLabel 2800 3750 0    50   Input ~ 0
+PIN8
+Text GLabel 2800 3850 0    50   Input ~ 0
+PIN9
+Text GLabel 2800 3950 0    50   Input ~ 0
+PIN10
+Wire Wire Line
+	2800 3050 2900 3050
+Wire Wire Line
+	2800 3150 2900 3150
+Wire Wire Line
+	2800 3250 2900 3250
+Wire Wire Line
+	2800 3350 2900 3350
+Wire Wire Line
+	2800 3450 2900 3450
+Wire Wire Line
+	2800 3550 2900 3550
+Wire Wire Line
+	2800 3650 2900 3650
+Wire Wire Line
+	2800 3750 2900 3750
+Wire Wire Line
+	2800 3850 2900 3850
+Wire Wire Line
+	2800 3950 2900 3950
+Wire Wire Line
+	3400 4350 3450 4350
+Wire Wire Line
+	3450 4350 3450 4450
+Wire Wire Line
+	3450 4550 3400 4550
+Wire Wire Line
+	3400 4450 3450 4450
+Connection ~ 3450 4450
+Wire Wire Line
+	3450 4450 3450 4550
+Wire Wire Line
+	3400 4050 3450 4050
+Wire Wire Line
+	3450 4050 3450 4150
+Wire Wire Line
+	3450 4250 3400 4250
+Wire Wire Line
+	3400 4150 3450 4150
+Connection ~ 3450 4150
+Wire Wire Line
+	3450 4150 3450 4250
+$Comp
+L stmbl:+24V #PWR0107
+U 1 1 5CD17DA7
+P 3450 4150
+F 0 "#PWR0107" H 3450 4000 50  0001 C CNN
+F 1 "+24V" V 3465 4278 50  0000 L CNN
+F 2 "" H 3450 4150 50  0001 C CNN
+F 3 "" H 3450 4150 50  0001 C CNN
+	1    3450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0108
+U 1 1 5CD17DB1
+P 3450 4450
+F 0 "#PWR0108" H 3450 4250 50  0001 C CNN
+F 1 "GNDPWR" V 3455 4342 50  0000 R CNN
+F 2 "" H 3450 4400 50  0001 C CNN
+F 3 "" H 3450 4400 50  0001 C CNN
+	1    3450 4450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3500 3050 2    50   Input ~ 0
+PIN11
+Text GLabel 3500 3150 2    50   Input ~ 0
+PIN12
+Text GLabel 3500 3250 2    50   Input ~ 0
+PIN13
+Text GLabel 3500 3350 2    50   Input ~ 0
+PIN14
+Text GLabel 3500 3450 2    50   Input ~ 0
+PIN15
+Text GLabel 3500 3550 2    50   Input ~ 0
+PIN16
+Text GLabel 3500 3650 2    50   Input ~ 0
+PIN17
+Text GLabel 3500 3750 2    50   Input ~ 0
+PIN18
+Text GLabel 3500 3850 2    50   Input ~ 0
+PIN19
+Text GLabel 3500 3950 2    50   Input ~ 0
+PIN20
+Wire Wire Line
+	3400 3050 3500 3050
+Wire Wire Line
+	3400 3150 3500 3150
+Wire Wire Line
+	3400 3250 3500 3250
+Wire Wire Line
+	3400 3350 3500 3350
+Wire Wire Line
+	3400 3450 3500 3450
+Wire Wire Line
+	3400 3550 3500 3550
+Wire Wire Line
+	3400 3650 3500 3650
+Wire Wire Line
+	3400 3750 3500 3750
+Wire Wire Line
+	3400 3850 3500 3850
+Wire Wire Line
+	3400 3950 3500 3950
+Wire Wire Line
+	4250 4350 4200 4350
+Wire Wire Line
+	4200 4350 4200 4450
+Wire Wire Line
+	4200 4550 4250 4550
+Wire Wire Line
+	4200 4450 4250 4450
+Connection ~ 4200 4450
+Wire Wire Line
+	4200 4450 4200 4550
+Wire Wire Line
+	4250 4250 4200 4250
+Wire Wire Line
+	4200 4250 4200 4150
+Wire Wire Line
+	4200 4050 4250 4050
+Wire Wire Line
+	4200 4150 4250 4150
+Connection ~ 4200 4150
+Wire Wire Line
+	4200 4150 4200 4050
+$Comp
+L stmbl:+24V #PWR0109
+U 1 1 5CD17DDB
+P 4200 4150
+F 0 "#PWR0109" H 4200 4000 50  0001 C CNN
+F 1 "+24V" V 4215 4278 50  0000 L CNN
+F 2 "" H 4200 4150 50  0001 C CNN
+F 3 "" H 4200 4150 50  0001 C CNN
+	1    4200 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0110
+U 1 1 5CD17DE5
+P 4200 4450
+F 0 "#PWR0110" H 4200 4250 50  0001 C CNN
+F 1 "GNDPWR" V 4204 4341 50  0000 R CNN
+F 2 "" H 4200 4400 50  0001 C CNN
+F 3 "" H 4200 4400 50  0001 C CNN
+	1    4200 4450
+	0    1    1    0   
+$EndComp
+Text GLabel 4150 3050 0    50   Input ~ 0
+PIN1
+Text GLabel 4150 3150 0    50   Input ~ 0
+PIN2
+Text GLabel 4150 3250 0    50   Input ~ 0
+PIN3
+Text GLabel 4150 3350 0    50   Input ~ 0
+PIN4
+Text GLabel 4150 3450 0    50   Input ~ 0
+PIN5
+Text GLabel 4150 3550 0    50   Input ~ 0
+PIN6
+Text GLabel 4150 3650 0    50   Input ~ 0
+PIN7
+Text GLabel 4150 3750 0    50   Input ~ 0
+PIN8
+Text GLabel 4150 3850 0    50   Input ~ 0
+PIN9
+Text GLabel 4150 3950 0    50   Input ~ 0
+PIN10
+Wire Wire Line
+	4150 3050 4250 3050
+Wire Wire Line
+	4150 3150 4250 3150
+Wire Wire Line
+	4150 3250 4250 3250
+Wire Wire Line
+	4150 3350 4250 3350
+Wire Wire Line
+	4150 3450 4250 3450
+Wire Wire Line
+	4150 3550 4250 3550
+Wire Wire Line
+	4150 3650 4250 3650
+Wire Wire Line
+	4150 3750 4250 3750
+Wire Wire Line
+	4150 3850 4250 3850
+Wire Wire Line
+	4150 3950 4250 3950
+Wire Wire Line
+	4750 4350 4800 4350
+Wire Wire Line
+	4800 4350 4800 4450
+Wire Wire Line
+	4800 4550 4750 4550
+Wire Wire Line
+	4750 4450 4800 4450
+Connection ~ 4800 4450
+Wire Wire Line
+	4800 4450 4800 4550
+Wire Wire Line
+	4750 4050 4800 4050
+Wire Wire Line
+	4800 4050 4800 4150
+Wire Wire Line
+	4800 4250 4750 4250
+Wire Wire Line
+	4750 4150 4800 4150
+Connection ~ 4800 4150
+Wire Wire Line
+	4800 4150 4800 4250
+$Comp
+L stmbl:+24V #PWR0111
+U 1 1 5CD1FA7E
+P 4800 4150
+F 0 "#PWR0111" H 4800 4000 50  0001 C CNN
+F 1 "+24V" V 4815 4278 50  0000 L CNN
+F 2 "" H 4800 4150 50  0001 C CNN
+F 3 "" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0112
+U 1 1 5CD1FA88
+P 4800 4450
+F 0 "#PWR0112" H 4800 4250 50  0001 C CNN
+F 1 "GNDPWR" V 4805 4342 50  0000 R CNN
+F 2 "" H 4800 4400 50  0001 C CNN
+F 3 "" H 4800 4400 50  0001 C CNN
+	1    4800 4450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4850 3050 2    50   Input ~ 0
+PIN11
+Text GLabel 4850 3150 2    50   Input ~ 0
+PIN12
+Text GLabel 4850 3250 2    50   Input ~ 0
+PIN13
+Text GLabel 4850 3350 2    50   Input ~ 0
+PIN14
+Text GLabel 4850 3450 2    50   Input ~ 0
+PIN15
+Text GLabel 4850 3550 2    50   Input ~ 0
+PIN16
+Text GLabel 4850 3650 2    50   Input ~ 0
+PIN17
+Text GLabel 4850 3750 2    50   Input ~ 0
+PIN18
+Text GLabel 4850 3850 2    50   Input ~ 0
+PIN19
+Text GLabel 4850 3950 2    50   Input ~ 0
+PIN20
+Wire Wire Line
+	4750 3050 4850 3050
+Wire Wire Line
+	4750 3150 4850 3150
+Wire Wire Line
+	4750 3250 4850 3250
+Wire Wire Line
+	4750 3350 4850 3350
+Wire Wire Line
+	4750 3450 4850 3450
+Wire Wire Line
+	4750 3550 4850 3550
+Wire Wire Line
+	4750 3650 4850 3650
+Wire Wire Line
+	4750 3750 4850 3750
+Wire Wire Line
+	4750 3850 4850 3850
+Wire Wire Line
+	4750 3950 4850 3950
+Wire Wire Line
+	5600 4350 5550 4350
+Wire Wire Line
+	5550 4350 5550 4450
+Wire Wire Line
+	5550 4550 5600 4550
+Wire Wire Line
+	5550 4450 5600 4450
+Connection ~ 5550 4450
+Wire Wire Line
+	5550 4450 5550 4550
+Wire Wire Line
+	5600 4250 5550 4250
+Wire Wire Line
+	5550 4250 5550 4150
+Wire Wire Line
+	5550 4050 5600 4050
+Wire Wire Line
+	5550 4150 5600 4150
+Connection ~ 5550 4150
+Wire Wire Line
+	5550 4150 5550 4050
+$Comp
+L stmbl:+24V #PWR0113
+U 1 1 5CD1FAB2
+P 5550 4150
+F 0 "#PWR0113" H 5550 4000 50  0001 C CNN
+F 1 "+24V" V 5565 4278 50  0000 L CNN
+F 2 "" H 5550 4150 50  0001 C CNN
+F 3 "" H 5550 4150 50  0001 C CNN
+	1    5550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0114
+U 1 1 5CD1FABC
+P 5550 4450
+F 0 "#PWR0114" H 5550 4250 50  0001 C CNN
+F 1 "GNDPWR" V 5554 4341 50  0000 R CNN
+F 2 "" H 5550 4400 50  0001 C CNN
+F 3 "" H 5550 4400 50  0001 C CNN
+	1    5550 4450
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 3050 0    50   Input ~ 0
+PIN1
+Text GLabel 5500 3150 0    50   Input ~ 0
+PIN2
+Text GLabel 5500 3250 0    50   Input ~ 0
+PIN3
+Text GLabel 5500 3350 0    50   Input ~ 0
+PIN4
+Text GLabel 5500 3450 0    50   Input ~ 0
+PIN5
+Text GLabel 5500 3550 0    50   Input ~ 0
+PIN6
+Text GLabel 5500 3650 0    50   Input ~ 0
+PIN7
+Text GLabel 5500 3750 0    50   Input ~ 0
+PIN8
+Text GLabel 5500 3850 0    50   Input ~ 0
+PIN9
+Text GLabel 5500 3950 0    50   Input ~ 0
+PIN10
+Wire Wire Line
+	5500 3050 5600 3050
+Wire Wire Line
+	5500 3150 5600 3150
+Wire Wire Line
+	5500 3250 5600 3250
+Wire Wire Line
+	5500 3350 5600 3350
+Wire Wire Line
+	5500 3450 5600 3450
+Wire Wire Line
+	5500 3550 5600 3550
+Wire Wire Line
+	5500 3650 5600 3650
+Wire Wire Line
+	5500 3750 5600 3750
+Wire Wire Line
+	5500 3850 5600 3850
+Wire Wire Line
+	5500 3950 5600 3950
+Wire Wire Line
+	6100 4350 6150 4350
+Wire Wire Line
+	6150 4350 6150 4450
+Wire Wire Line
+	6150 4550 6100 4550
+Wire Wire Line
+	6100 4450 6150 4450
+Connection ~ 6150 4450
+Wire Wire Line
+	6150 4450 6150 4550
+Wire Wire Line
+	6100 4050 6150 4050
+Wire Wire Line
+	6150 4050 6150 4150
+Wire Wire Line
+	6150 4250 6100 4250
+Wire Wire Line
+	6100 4150 6150 4150
+Connection ~ 6150 4150
+Wire Wire Line
+	6150 4150 6150 4250
+$Comp
+L stmbl:+24V #PWR0115
+U 1 1 5CD2A7AB
+P 6150 4150
+F 0 "#PWR0115" H 6150 4000 50  0001 C CNN
+F 1 "+24V" V 6165 4278 50  0000 L CNN
+F 2 "" H 6150 4150 50  0001 C CNN
+F 3 "" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0116
+U 1 1 5CD2A7B5
+P 6150 4450
+F 0 "#PWR0116" H 6150 4250 50  0001 C CNN
+F 1 "GNDPWR" V 6155 4342 50  0000 R CNN
+F 2 "" H 6150 4400 50  0001 C CNN
+F 3 "" H 6150 4400 50  0001 C CNN
+	1    6150 4450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6200 3050 2    50   Input ~ 0
+PIN11
+Text GLabel 6200 3150 2    50   Input ~ 0
+PIN12
+Text GLabel 6200 3250 2    50   Input ~ 0
+PIN13
+Text GLabel 6200 3350 2    50   Input ~ 0
+PIN14
+Text GLabel 6200 3450 2    50   Input ~ 0
+PIN15
+Text GLabel 6200 3550 2    50   Input ~ 0
+PIN16
+Text GLabel 6200 3650 2    50   Input ~ 0
+PIN17
+Text GLabel 6200 3750 2    50   Input ~ 0
+PIN18
+Text GLabel 6200 3850 2    50   Input ~ 0
+PIN19
+Text GLabel 6200 3950 2    50   Input ~ 0
+PIN20
+Wire Wire Line
+	6100 3050 6200 3050
+Wire Wire Line
+	6100 3150 6200 3150
+Wire Wire Line
+	6100 3250 6200 3250
+Wire Wire Line
+	6100 3350 6200 3350
+Wire Wire Line
+	6100 3450 6200 3450
+Wire Wire Line
+	6100 3550 6200 3550
+Wire Wire Line
+	6100 3650 6200 3650
+Wire Wire Line
+	6100 3750 6200 3750
+Wire Wire Line
+	6100 3850 6200 3850
+Wire Wire Line
+	6100 3950 6200 3950
+Wire Wire Line
+	6950 4350 6900 4350
+Wire Wire Line
+	6900 4350 6900 4450
+Wire Wire Line
+	6900 4550 6950 4550
+Wire Wire Line
+	6900 4450 6950 4450
+Connection ~ 6900 4450
+Wire Wire Line
+	6900 4450 6900 4550
+Wire Wire Line
+	6950 4250 6900 4250
+Wire Wire Line
+	6900 4250 6900 4150
+Wire Wire Line
+	6900 4050 6950 4050
+Wire Wire Line
+	6900 4150 6950 4150
+Connection ~ 6900 4150
+Wire Wire Line
+	6900 4150 6900 4050
+$Comp
+L stmbl:+24V #PWR0117
+U 1 1 5CD2A7DF
+P 6900 4150
+F 0 "#PWR0117" H 6900 4000 50  0001 C CNN
+F 1 "+24V" V 6915 4278 50  0000 L CNN
+F 2 "" H 6900 4150 50  0001 C CNN
+F 3 "" H 6900 4150 50  0001 C CNN
+	1    6900 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0118
+U 1 1 5CD2A7E9
+P 6900 4450
+F 0 "#PWR0118" H 6900 4250 50  0001 C CNN
+F 1 "GNDPWR" V 6904 4341 50  0000 R CNN
+F 2 "" H 6900 4400 50  0001 C CNN
+F 3 "" H 6900 4400 50  0001 C CNN
+	1    6900 4450
+	0    1    1    0   
+$EndComp
+Text GLabel 6850 3050 0    50   Input ~ 0
+PIN1
+Text GLabel 6850 3150 0    50   Input ~ 0
+PIN2
+Text GLabel 6850 3250 0    50   Input ~ 0
+PIN3
+Text GLabel 6850 3350 0    50   Input ~ 0
+PIN4
+Text GLabel 6850 3450 0    50   Input ~ 0
+PIN5
+Text GLabel 6850 3550 0    50   Input ~ 0
+PIN6
+Text GLabel 6850 3650 0    50   Input ~ 0
+PIN7
+Text GLabel 6850 3750 0    50   Input ~ 0
+PIN8
+Text GLabel 6850 3850 0    50   Input ~ 0
+PIN9
+Text GLabel 6850 3950 0    50   Input ~ 0
+PIN10
+Wire Wire Line
+	6850 3050 6950 3050
+Wire Wire Line
+	6850 3150 6950 3150
+Wire Wire Line
+	6850 3250 6950 3250
+Wire Wire Line
+	6850 3350 6950 3350
+Wire Wire Line
+	6850 3450 6950 3450
+Wire Wire Line
+	6850 3550 6950 3550
+Wire Wire Line
+	6850 3650 6950 3650
+Wire Wire Line
+	6850 3750 6950 3750
+Wire Wire Line
+	6850 3850 6950 3850
+Wire Wire Line
+	6850 3950 6950 3950
+Wire Wire Line
+	7450 4350 7500 4350
+Wire Wire Line
+	7500 4350 7500 4450
+Wire Wire Line
+	7500 4550 7450 4550
+Wire Wire Line
+	7450 4450 7500 4450
+Connection ~ 7500 4450
+Wire Wire Line
+	7500 4450 7500 4550
+Wire Wire Line
+	7450 4050 7500 4050
+Wire Wire Line
+	7500 4050 7500 4150
+Wire Wire Line
+	7500 4250 7450 4250
+Wire Wire Line
+	7450 4150 7500 4150
+Connection ~ 7500 4150
+Wire Wire Line
+	7500 4150 7500 4250
+$Comp
+L stmbl:+24V #PWR0119
+U 1 1 5CD3737F
+P 7500 4150
+F 0 "#PWR0119" H 7500 4000 50  0001 C CNN
+F 1 "+24V" V 7515 4278 50  0000 L CNN
+F 2 "" H 7500 4150 50  0001 C CNN
+F 3 "" H 7500 4150 50  0001 C CNN
+	1    7500 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0120
+U 1 1 5CD37389
+P 7500 4450
+F 0 "#PWR0120" H 7500 4250 50  0001 C CNN
+F 1 "GNDPWR" V 7505 4342 50  0000 R CNN
+F 2 "" H 7500 4400 50  0001 C CNN
+F 3 "" H 7500 4400 50  0001 C CNN
+	1    7500 4450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7550 3050 2    50   Input ~ 0
+PIN11
+Text GLabel 7550 3150 2    50   Input ~ 0
+PIN12
+Text GLabel 7550 3250 2    50   Input ~ 0
+PIN13
+Text GLabel 7550 3350 2    50   Input ~ 0
+PIN14
+Text GLabel 7550 3450 2    50   Input ~ 0
+PIN15
+Text GLabel 7550 3550 2    50   Input ~ 0
+PIN16
+Text GLabel 7550 3650 2    50   Input ~ 0
+PIN17
+Text GLabel 7550 3750 2    50   Input ~ 0
+PIN18
+Text GLabel 7550 3850 2    50   Input ~ 0
+PIN19
+Text GLabel 7550 3950 2    50   Input ~ 0
+PIN20
+Wire Wire Line
+	7450 3050 7550 3050
+Wire Wire Line
+	7450 3150 7550 3150
+Wire Wire Line
+	7450 3250 7550 3250
+Wire Wire Line
+	7450 3350 7550 3350
+Wire Wire Line
+	7450 3450 7550 3450
+Wire Wire Line
+	7450 3550 7550 3550
+Wire Wire Line
+	7450 3650 7550 3650
+Wire Wire Line
+	7450 3750 7550 3750
+Wire Wire Line
+	7450 3850 7550 3850
+Wire Wire Line
+	7450 3950 7550 3950
+$Comp
+L Device:CP C1
+U 1 1 5CD881B2
+P 2600 1900
+F 0 "C1" H 2718 1946 50  0000 L CNN
+F 1 "CP" H 2718 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 2638 1750 50  0001 C CNN
+F 3 "~" H 2600 1900 50  0001 C CNN
+	1    2600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5CD88248
+P 2950 1900
+F 0 "C2" H 3068 1946 50  0000 L CNN
+F 1 "CP" H 3068 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 2988 1750 50  0001 C CNN
+F 3 "~" H 2950 1900 50  0001 C CNN
+	1    2950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5CD88381
+P 3300 1900
+F 0 "C3" H 3418 1946 50  0000 L CNN
+F 1 "CP" H 3418 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 3338 1750 50  0001 C CNN
+F 3 "~" H 3300 1900 50  0001 C CNN
+	1    3300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:+24V #PWR0121
+U 1 1 5CD88741
+P 2950 1600
+F 0 "#PWR0121" H 2950 1450 50  0001 C CNN
+F 1 "+24V" H 2965 1773 50  0000 C CNN
+F 2 "" H 2950 1600 50  0001 C CNN
+F 3 "" H 2950 1600 50  0001 C CNN
+	1    2950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0122
+U 1 1 5CD89087
+P 2950 2200
+F 0 "#PWR0122" H 2950 2000 50  0001 C CNN
+F 1 "GNDPWR" H 2954 2046 50  0000 C CNN
+F 2 "" H 2950 2150 50  0001 C CNN
+F 3 "" H 2950 2150 50  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2050 2600 2100
+Wire Wire Line
+	2600 2100 2950 2100
+Wire Wire Line
+	3300 2100 3300 2050
+Wire Wire Line
+	2600 1750 2600 1700
+Wire Wire Line
+	2600 1700 2950 1700
+Wire Wire Line
+	3300 1700 3300 1750
+Wire Wire Line
+	2950 1600 2950 1700
+Wire Wire Line
+	2950 2050 2950 2100
+Connection ~ 2950 1700
+Wire Wire Line
+	2950 1700 3300 1700
+Wire Wire Line
+	2950 1700 2950 1750
+Connection ~ 2950 2100
+Wire Wire Line
+	2950 2100 3300 2100
+Wire Wire Line
+	2950 2100 2950 2200
+$Comp
+L Mechanical:Mounting_Hole MK1
+U 1 1 5CDBC79B
+P 4550 1600
+F 0 "MK1" H 4650 1646 50  0000 L CNN
+F 1 "Mounting_Hole" H 4650 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4550 1600 50  0001 C CNN
+F 3 "" H 4550 1600 50  0001 C CNN
+	1    4550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK4
+U 1 1 5CDBCAB8
+P 5350 1600
+F 0 "MK4" H 5450 1646 50  0000 L CNN
+F 1 "Mounting_Hole" H 5450 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5350 1600 50  0001 C CNN
+F 3 "" H 5350 1600 50  0001 C CNN
+	1    5350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK2
+U 1 1 5CDBCD0C
+P 4550 1800
+F 0 "MK2" H 4650 1846 50  0000 L CNN
+F 1 "Mounting_Hole" H 4650 1755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4550 1800 50  0001 C CNN
+F 3 "" H 4550 1800 50  0001 C CNN
+	1    4550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK5
+U 1 1 5CDBCD16
+P 5350 1800
+F 0 "MK5" H 5450 1846 50  0000 L CNN
+F 1 "Mounting_Hole" H 5450 1755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5350 1800 50  0001 C CNN
+F 3 "" H 5350 1800 50  0001 C CNN
+	1    5350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK3
+U 1 1 5CDC93C3
+P 4550 2000
+F 0 "MK3" H 4650 2046 50  0000 L CNN
+F 1 "Mounting_Hole" H 4650 1955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4550 2000 50  0001 C CNN
+F 3 "" H 4550 2000 50  0001 C CNN
+	1    4550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK6
+U 1 1 5CDC93CD
+P 5350 2000
+F 0 "MK6" H 5450 2046 50  0000 L CNN
+F 1 "Mounting_Hole" H 5450 1955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5350 2000 50  0001 C CNN
+F 3 "" H 5350 2000 50  0001 C CNN
+	1    5350 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
