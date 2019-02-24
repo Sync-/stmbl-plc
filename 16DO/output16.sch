@@ -48,19 +48,19 @@ Text GLabel 3400 6250 2    50   Input ~ 0
 OUT2
 Text GLabel 3400 6650 2    50   Input ~ 0
 OUT3
-Text GLabel 3400 3600 2    50   Input ~ 0
-OUT4
-Text GLabel 3400 3700 2    50   Input ~ 0
-OUT5
-Text GLabel 3400 3800 2    50   Input ~ 0
-OUT6
 Text GLabel 3400 3900 2    50   Input ~ 0
-OUT7
+OUT4
 Text GLabel 3400 3200 2    50   Input ~ 0
-OUT8
-Text GLabel 3400 3300 2    50   Input ~ 0
-OUT9
+OUT5
 Text GLabel 3400 3400 2    50   Input ~ 0
+OUT6
+Text GLabel 3400 3800 2    50   Input ~ 0
+OUT7
+Text GLabel 3400 3300 2    50   Input ~ 0
+OUT8
+Text GLabel 3400 3700 2    50   Input ~ 0
+OUT9
+Text GLabel 3400 3600 2    50   Input ~ 0
 OUT10
 Text GLabel 3400 3500 2    50   Input ~ 0
 OUT11
@@ -481,12 +481,12 @@ F 4 "865080545012" H 5650 1900 50  0001 C CNN "WurthNr"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1.5KExxA D?
+L Diode:1.5KExxA D17
 U 1 1 5CB39FBF
 P 6050 1900
-F 0 "D?" V 6004 1979 50  0000 L CNN
+F 0 "D17" V 6004 1979 50  0000 L CNN
 F 1 "1.5KExxA" V 6095 1979 50  0000 L CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 6050 1700 50  0001 C CNN
+F 2 "stmbl:D_SMC" H 6050 1700 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 6000 1900 50  0001 C CNN
 	1    6050 1900
 	0    1    1    0   
@@ -502,10 +502,10 @@ Wire Wire Line
 	6050 2100 6050 2050
 Connection ~ 5650 2100
 Text GLabel 1200 2300 0    50   Input ~ 0
-SPI_CLK
+SPI_SCK
 Text GLabel 1200 2400 0    50   Input ~ 0
 SPI_MOSI
-Text GLabel 1200 2600 0    50   Input ~ 0
+Text GLabel 1200 5350 0    50   Input ~ 0
 SPI_MISO
 Text GLabel 1200 2850 0    50   Input ~ 0
 EN_OUT
@@ -532,10 +532,10 @@ Wire Wire Line
 Wire Wire Line
 	1200 5900 2000 5900
 $Comp
-L Mechanical:Mounting_Hole MK?
+L Mechanical:Mounting_Hole MK9
 U 1 1 5CB5776C
 P 5550 3550
-F 0 "MK?" H 5650 3596 50  0000 L CNN
+F 0 "MK9" H 5650 3596 50  0000 L CNN
 F 1 "Mounting_Hole" H 5650 3505 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 5550 3550 50  0001 C CNN
 F 3 "" H 5550 3550 50  0001 C CNN
@@ -543,14 +543,18 @@ F 3 "" H 5550 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK?
+L Mechanical:Mounting_Hole MK10
 U 1 1 5CB57776
 P 6350 3550
-F 0 "MK?" H 6450 3596 50  0000 L CNN
+F 0 "MK10" H 6450 3596 50  0000 L CNN
 F 1 "Mounting_Hole" H 6450 3505 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 3550 50  0001 C CNN
 F 3 "" H 6350 3550 50  0001 C CNN
 	1    6350 3550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2000 5350 1200 5350
+Text GLabel 1200 2600 0    50   Input ~ 0
+SPI_CS_OUT
 $EndSCHEMATC
