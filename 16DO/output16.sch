@@ -183,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 6750 3400 6750
 $Comp
-L Mechanical:Mounting_Hole MK4
+L 16do-rescue:Mounting_Hole-Mechanical MK4
 U 1 1 5C8200B3
 P 5550 3350
 F 0 "MK4" H 5650 3396 50  0000 L CNN
@@ -194,7 +194,7 @@ F 3 "" H 5550 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK3
+L 16do-rescue:Mounting_Hole-Mechanical MK3
 U 1 1 5C820234
 P 5550 3150
 F 0 "MK3" H 5650 3196 50  0000 L CNN
@@ -205,7 +205,7 @@ F 3 "" H 5550 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK2
+L 16do-rescue:Mounting_Hole-Mechanical MK2
 U 1 1 5C82058F
 P 5550 2950
 F 0 "MK2" H 5650 2996 50  0000 L CNN
@@ -216,7 +216,7 @@ F 3 "" H 5550 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK1
+L 16do-rescue:Mounting_Hole-Mechanical MK1
 U 1 1 5C820599
 P 5550 2750
 F 0 "MK1" H 5650 2796 50  0000 L CNN
@@ -227,7 +227,7 @@ F 3 "" H 5550 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK8
+L 16do-rescue:Mounting_Hole-Mechanical MK8
 U 1 1 5C821616
 P 6350 3350
 F 0 "MK8" H 6450 3396 50  0000 L CNN
@@ -238,7 +238,7 @@ F 3 "" H 6350 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK7
+L 16do-rescue:Mounting_Hole-Mechanical MK7
 U 1 1 5C821620
 P 6350 3150
 F 0 "MK7" H 6450 3196 50  0000 L CNN
@@ -249,7 +249,7 @@ F 3 "" H 6350 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK6
+L 16do-rescue:Mounting_Hole-Mechanical MK6
 U 1 1 5C82162A
 P 6350 2950
 F 0 "MK6" H 6450 2996 50  0000 L CNN
@@ -260,7 +260,7 @@ F 3 "" H 6350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK5
+L 16do-rescue:Mounting_Hole-Mechanical MK5
 U 1 1 5C821634
 P 6350 2750
 F 0 "MK5" H 6450 2796 50  0000 L CNN
@@ -481,9 +481,11 @@ F 4 "865080545012" H 5650 1900 50  0001 C CNN "WurthNr"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1.5KExxA D17
+L 16do-rescue:1.5KExxA-Diode D17
 U 1 1 5CB39FBF
 P 6050 1900
+AR Path="/5CB39FBF" Ref="D17"  Part="1" 
+AR Path="/5BABFF80/5CB39FBF" Ref="D17"  Part="1" 
 F 0 "D17" V 6004 1979 50  0000 L CNN
 F 1 "1.5KExxA" V 6095 1979 50  0000 L CNN
 F 2 "stmbl:D_SMC" H 6050 1700 50  0001 C CNN
@@ -532,7 +534,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 5900 2000 5900
 $Comp
-L Mechanical:Mounting_Hole MK9
+L 16do-rescue:Mounting_Hole-Mechanical MK9
 U 1 1 5CB5776C
 P 5550 3550
 F 0 "MK9" H 5650 3596 50  0000 L CNN
@@ -543,7 +545,7 @@ F 3 "" H 5550 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK10
+L 16do-rescue:Mounting_Hole-Mechanical MK10
 U 1 1 5CB57776
 P 6350 3550
 F 0 "MK10" H 6450 3596 50  0000 L CNN
@@ -557,4 +559,26 @@ Wire Wire Line
 	2000 5350 1200 5350
 Text GLabel 1200 2600 0    50   Input ~ 0
 SPI_CS_OUT
+$Comp
+L 16do-rescue:Mounting_Hole-Mechanical MK11
+U 1 1 5CDEA813
+P 5550 3750
+F 0 "MK11" H 5650 3796 50  0000 L CNN
+F 1 "Mounting_Hole" H 5650 3705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5550 3750 50  0001 C CNN
+F 3 "" H 5550 3750 50  0001 C CNN
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 16do-rescue:Mounting_Hole-Mechanical MK12
+U 1 1 5CDEA81D
+P 6350 3750
+F 0 "MK12" H 6450 3796 50  0000 L CNN
+F 1 "Mounting_Hole" H 6450 3705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 3750 50  0001 C CNN
+F 3 "" H 6350 3750 50  0001 C CNN
+	1    6350 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

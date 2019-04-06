@@ -15,19 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:LD3985G33R_TSOT23 U?
-U 1 1 5BAEB5FF
-P 5050 3250
-AR Path="/5BAEB5FF" Ref="U?"  Part="1" 
-AR Path="/5BAEB4FB/5BAEB5FF" Ref="U4"  Part="1" 
-F 0 "U4" H 5050 3592 50  0000 C CNN
-F 1 "LD3985G33R_TSOT23" H 5050 3501 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 5050 3575 50  0001 C CIN
-F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00003395.pdf" H 5050 3300 50  0001 C CNN
-	1    5050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:AZ1117-3.3 U?
 U 1 1 5BAEB606
 P 6550 3150
@@ -41,20 +28,7 @@ F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 6650 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stmbl:+24V #PWR?
-U 1 1 5BAEB60D
-P 3300 3150
-AR Path="/5BAEB60D" Ref="#PWR?"  Part="1" 
-AR Path="/5BAEB4FB/5BAEB60D" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 3300 3000 50  0001 C CNN
-F 1 "+24V" H 3315 3323 50  0000 C CNN
-F 2 "" H 3300 3150 50  0000 C CNN
-F 3 "" H 3300 3150 50  0000 C CNN
-	1    3300 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
+L 16do-rescue:+3.3V-power #PWR?
 U 1 1 5BAEB613
 P 7050 3150
 AR Path="/5BAEB613" Ref="#PWR?"  Part="1" 
@@ -67,29 +41,720 @@ F 3 "" H 7050 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3VA #PWR?
-U 1 1 5BAEB619
-P 5550 3150
-AR Path="/5BAEB619" Ref="#PWR?"  Part="1" 
-AR Path="/5BAEB4FB/5BAEB619" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 5550 3000 50  0001 C CNN
-F 1 "+3.3VA" H 5565 3323 50  0000 C CNN
-F 2 "" H 5550 3150 50  0001 C CNN
-F 3 "" H 5550 3150 50  0001 C CNN
-	1    5550 3150
+L stmbl:C C?
+U 1 1 5CE05742
+P 6250 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE05742" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE05742" Ref="C13"  Part="1" 
+F 0 "C13" H 6275 5150 50  0000 L CNN
+F 1 "10µ" H 6275 4950 50  0000 L CNN
+F 2 "stmbl:C_0805" H 6288 4900 30  0001 C CNN
+F 3 "" H 6250 5050 60  0000 C CNN
+F 4 "25V" H 6250 5050 60  0001 C CNN "Voltage"
+F 5 "" H 6250 5050 60  0001 C CNN "InternalName"
+F 6 "" H 6250 5050 60  0001 C CNN "Manufacturer No"
+F 7 "" H 6250 5050 60  0001 C CNN "Source"
+F 8 "X5R" H 6250 5050 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    6250 5050
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5BAEB61F
-P 3850 3150
-AR Path="/5BAEB61F" Ref="#PWR?"  Part="1" 
-AR Path="/5BAEB4FB/5BAEB61F" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 3850 3000 50  0001 C CNN
-F 1 "+5V" H 3865 3323 50  0000 C CNN
-F 2 "" H 3850 3150 50  0001 C CNN
-F 3 "" H 3850 3150 50  0001 C CNN
-	1    3850 3150
+L stmbl:R R?
+U 1 1 5CE0574F
+P 4750 4800
+AR Path="/5BAEB4FB/5CDEF8C0/5CE0574F" Ref="R?"  Part="1" 
+AR Path="/5BAEB4FB/5CE0574F" Ref="R42"  Part="1" 
+F 0 "R42" V 4830 4800 50  0000 C CNN
+F 1 "51k" V 4750 4800 50  0000 C CNN
+F 2 "stmbl:R_0603" V 4680 4800 30  0001 C CNN
+F 3 "" H 4750 4800 30  0000 C CNN
+F 4 "" H 4750 4800 30  0001 C CNN "InternalName"
+F 5 "" H 4750 4800 30  0001 C CNN "Manufacturer No"
+F 6 "" H 4750 4800 30  0001 C CNN "Voltage"
+F 7 "" H 4750 4800 30  0001 C CNN "Source"
+F 8 "1%" H 4750 4800 30  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    4750 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L stmbl:R R?
+U 1 1 5CE0575C
+P 4500 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE0575C" Ref="R?"  Part="1" 
+AR Path="/5BAEB4FB/5CE0575C" Ref="R41"  Part="1" 
+F 0 "R41" V 4580 5050 50  0000 C CNN
+F 1 "10k" V 4500 5050 50  0000 C CNN
+F 2 "stmbl:R_0603" V 4430 5050 30  0001 C CNN
+F 3 "" H 4500 5050 30  0000 C CNN
+F 4 "" H 4500 5050 30  0001 C CNN "InternalName"
+F 5 "" H 4500 5050 30  0001 C CNN "Manufacturer No"
+F 6 "" H 4500 5050 30  0001 C CNN "Voltage"
+F 7 "" H 4500 5050 30  0001 C CNN "Source"
+F 8 "1%" H 4500 5050 30  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    4500 5050
 	1    0    0    -1  
 $EndComp
+$Comp
+L stmbl:D_Schottky D?
+U 1 1 5CE05769
+P 5000 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE05769" Ref="D?"  Part="1" 
+AR Path="/5BAEB4FB/5CE05769" Ref="D24"  Part="1" 
+F 0 "D24" H 5000 5150 50  0000 C CNN
+F 1 "SS34A" H 5000 4950 50  0000 C CNN
+F 2 "stmbl:SMA_Standard" H 5000 5050 60  0001 C CNN
+F 3 "" H 5000 5050 60  0000 C CNN
+F 4 "" H 5000 5050 60  0001 C CNN "InternalName"
+F 5 "SS34A" H 5000 5050 60  0001 C CNN "Manufacturer No"
+F 6 "" H 5000 5050 60  0001 C CNN "Voltage"
+F 7 "" H 5000 5050 60  0001 C CNN "Source"
+F 8 "" H 5000 5050 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "Multicomp" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    5000 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE05776
+P 4650 4500
+AR Path="/5BAEB4FB/5CDEF8C0/5CE05776" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE05776" Ref="C9"  Part="1" 
+F 0 "C9" H 4675 4600 50  0000 L CNN
+F 1 "100n" H 4675 4400 50  0000 L CNN
+F 2 "stmbl:C_0603" H 4688 4350 30  0001 C CNN
+F 3 "" H 4650 4500 60  0000 C CNN
+F 4 "" H 4650 4500 60  0001 C CNN "InternalName"
+F 5 "" H 4650 4500 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 4650 4500 60  0001 C CNN "Voltage"
+F 7 "" H 4650 4500 60  0001 C CNN "Source"
+F 8 "X5R" H 4650 4500 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    4650 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:INDUCTOR L?
+U 1 1 5CE05783
+P 5400 4650
+AR Path="/5BAEB4FB/5CDEF8C0/5CE05783" Ref="L?"  Part="1" 
+AR Path="/5BAEB4FB/5CE05783" Ref="L1"  Part="1" 
+F 0 "L1" V 5350 4650 50  0000 C CNN
+F 1 "4.7µH 1.5A" V 5500 4650 50  0000 C CNN
+F 2 "stmbl:SMD_INDUCTOR_32x25" H 5400 4650 60  0001 C CNN
+F 3 "" H 5400 4650 60  0000 C CNN
+F 4 "" H 5400 4650 60  0001 C CNN "InternalName"
+F 5 "LQH32PN4R7NNC" H 5400 4650 60  0001 C CNN "Manufacturer No"
+F 6 "" H 5400 4650 60  0001 C CNN "Voltage"
+F 7 "" H 5400 4650 60  0001 C CNN "Source"
+F 8 "" H 5400 4650 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "Murata" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    5400 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:ACT4088 U?
+U 1 1 5CE05790
+P 4000 4650
+AR Path="/5BAEB4FB/5CDEF8C0/5CE05790" Ref="U?"  Part="1" 
+AR Path="/5BAEB4FB/5CE05790" Ref="U4"  Part="1" 
+F 0 "U4" H 3850 4900 60  0000 C CNN
+F 1 "ACT4088" H 4000 4400 60  0000 C CNN
+F 2 "stmbl:SOT-23-6" H 4000 4650 60  0001 C CNN
+F 3 "" H 4000 4650 60  0000 C CNN
+F 4 "" H 4000 4650 60  0001 C CNN "InternalName"
+F 5 "ACT4088US-T" H 4000 4650 60  0001 C CNN "Manufacturer No"
+F 6 "" H 4000 4650 60  0001 C CNN "Voltage"
+F 7 "" H 4000 4650 60  0001 C CNN "Source"
+F 8 "" H 4000 4650 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "Active-Semi" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    4000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:+24V #PWR?
+U 1 1 5CE0579C
+P 2850 4400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE0579C" Ref="#PWR?"  Part="1" 
+AR Path="/5BAEB4FB/5CE0579C" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 2850 4250 50  0001 C CNN
+F 1 "+24V" H 2850 4540 50  0000 C CNN
+F 2 "" H 2850 4400 60  0000 C CNN
+F 3 "" H 2850 4400 60  0000 C CNN
+	1    2850 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3600 4650
+$Comp
+L stmbl:+5V #PWR?
+U 1 1 5CE057A3
+P 5800 4550
+AR Path="/5BAEB4FB/5CDEF8C0/5CE057A3" Ref="#PWR?"  Part="1" 
+AR Path="/5BAEB4FB/5CE057A3" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 5800 4400 50  0001 C CNN
+F 1 "+5V" H 5800 4690 50  0000 C CNN
+F 2 "" H 5800 4550 50  0000 C CNN
+F 3 "" H 5800 4550 50  0000 C CNN
+	1    5800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE057B0
+P 5500 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE057B0" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE057B0" Ref="C10"  Part="1" 
+F 0 "C10" H 5525 5150 50  0000 L CNN
+F 1 "100n" H 5525 4950 50  0000 L CNN
+F 2 "stmbl:C_0603" H 5538 4900 30  0001 C CNN
+F 3 "" H 5500 5050 60  0000 C CNN
+F 4 "" H 5500 5050 60  0001 C CNN "InternalName"
+F 5 "" H 5500 5050 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 5500 5050 60  0001 C CNN "Voltage"
+F 7 "" H 5500 5050 60  0001 C CNN "Source"
+F 8 "X5R" H 5500 5050 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    5500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE057BD
+P 2850 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE057BD" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE057BD" Ref="C7"  Part="1" 
+F 0 "C7" H 2875 5150 50  0000 L CNN
+F 1 "100n" H 2875 4950 50  0000 L CNN
+F 2 "stmbl:C_0603" H 2888 4900 30  0001 C CNN
+F 3 "" H 2850 5050 60  0000 C CNN
+F 4 "" H 2850 5050 60  0001 C CNN "InternalName"
+F 5 "" H 2850 5050 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 2850 5050 60  0001 C CNN "Voltage"
+F 7 "" H 2850 5050 60  0001 C CNN "Source"
+F 8 "X5R" H 2850 5050 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    2850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE057CA
+P 6000 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE057CA" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE057CA" Ref="C12"  Part="1" 
+F 0 "C12" H 6025 5150 50  0000 L CNN
+F 1 "10µ" H 6025 4950 50  0000 L CNN
+F 2 "stmbl:C_0805" H 6038 4900 30  0001 C CNN
+F 3 "" H 6000 5050 60  0000 C CNN
+F 4 "25V" H 6000 5050 60  0001 C CNN "Voltage"
+F 5 "" H 6000 5050 60  0001 C CNN "InternalName"
+F 6 "" H 6000 5050 60  0001 C CNN "Manufacturer No"
+F 7 "" H 6000 5050 60  0001 C CNN "Source"
+F 8 "X5R" H 6000 5050 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    6000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R?
+U 1 1 5CE057D8
+P 5250 4800
+AR Path="/5BAEB4FB/5CDEF8C0/5CE057D8" Ref="R?"  Part="1" 
+AR Path="/5BAEB4FB/5CE057D8" Ref="R43"  Part="1" 
+F 0 "R43" V 5330 4800 50  0000 C CNN
+F 1 "1k" V 5250 4800 50  0000 C CNN
+F 2 "stmbl:R_0603" V 5180 4800 30  0001 C CNN
+F 3 "" H 5250 4800 30  0000 C CNN
+F 4 "" H 5250 4800 30  0001 C CNN "InternalName"
+F 5 "" H 5250 4800 30  0001 C CNN "Manufacturer No"
+F 6 "" H 5250 4800 30  0001 C CNN "Voltage"
+F 7 "" H 5250 4800 30  0001 C CNN "Source"
+F 8 "1%" H 5250 4800 30  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    5250 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE057E5
+P 5750 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE057E5" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE057E5" Ref="C11"  Part="1" 
+F 0 "C11" H 5775 5150 50  0000 L CNN
+F 1 "2.2µ" H 5775 4950 50  0000 L CNN
+F 2 "stmbl:C_0603" H 5788 4900 30  0001 C CNN
+F 3 "" H 5750 5050 60  0000 C CNN
+F 4 "35V" H 5750 5050 60  0001 C CNN "Voltage"
+F 5 "" H 5750 5050 60  0001 C CNN "InternalName"
+F 6 "" H 5750 5050 60  0001 C CNN "Manufacturer No"
+F 7 "" H 5750 5050 60  0001 C CNN "Source"
+F 8 "X5R" H 5750 5050 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    5750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE057F2
+P 3100 5050
+AR Path="/5BAEB4FB/5CDEF8C0/5CE057F2" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE057F2" Ref="C8"  Part="1" 
+F 0 "C8" H 3125 5150 50  0000 L CNN
+F 1 "2.2µ" H 3125 4950 50  0000 L CNN
+F 2 "stmbl:C_0603" H 3138 4900 30  0001 C CNN
+F 3 "" H 3100 5050 60  0000 C CNN
+F 4 "" H 3100 5050 60  0001 C CNN "InternalName"
+F 5 "" H 3100 5050 60  0001 C CNN "Manufacturer No"
+F 6 "35V" H 3100 5050 60  0001 C CNN "Voltage"
+F 7 "" H 3100 5050 60  0001 C CNN "Source"
+F 8 "X5R" H 3100 5050 60  0001 C CNN "Tolerance"
+F 9 "" H -2200 1500 50  0001 C CNN "Description"
+F 10 "" H -2200 1500 50  0001 C CNN "Manufacturer"
+	1    3100 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4500 4500 4500
+Wire Wire Line
+	4400 4650 4900 4650
+Wire Wire Line
+	5000 4650 5000 4900
+Wire Wire Line
+	5800 4800 5800 4650
+Wire Wire Line
+	5750 5300 5750 5200
+Connection ~ 5800 4800
+Wire Wire Line
+	4400 4800 4500 4800
+Wire Wire Line
+	4500 4900 4500 4800
+Connection ~ 4500 4800
+Connection ~ 4900 4650
+Connection ~ 5800 4650
+Wire Wire Line
+	2850 5200 2850 5300
+Connection ~ 2850 5300
+Wire Wire Line
+	2850 4400 2850 4500
+Wire Wire Line
+	2850 4500 3100 4500
+Connection ~ 5000 4650
+Connection ~ 5000 5300
+Connection ~ 4500 5300
+Wire Wire Line
+	2850 5300 3100 5300
+Wire Wire Line
+	5700 4650 5800 4650
+Wire Wire Line
+	5500 5200 5500 5300
+Connection ~ 5500 5300
+Connection ~ 5500 4800
+Connection ~ 2850 4500
+Wire Wire Line
+	6000 5300 6000 5200
+Connection ~ 5750 5300
+Wire Wire Line
+	4900 4800 5100 4800
+Wire Wire Line
+	5400 4800 5500 4800
+Wire Wire Line
+	6250 5300 6250 5200
+Connection ~ 6000 5300
+Connection ~ 6000 4800
+Wire Wire Line
+	5500 4900 5500 4800
+Wire Wire Line
+	6000 4900 6000 4800
+Wire Wire Line
+	6250 4800 6250 4900
+Wire Wire Line
+	5000 5300 5000 5200
+Wire Wire Line
+	4500 5300 4500 5200
+Wire Wire Line
+	3600 4800 3500 4800
+Wire Wire Line
+	3500 4800 3500 5300
+Connection ~ 3500 5300
+Wire Wire Line
+	4800 4500 4900 4500
+Wire Wire Line
+	4900 4500 4900 4650
+Wire Wire Line
+	5750 4900 5750 4800
+Connection ~ 5750 4800
+Wire Wire Line
+	3100 4900 3100 4500
+Connection ~ 3100 4500
+Wire Wire Line
+	3100 5200 3100 5300
+Connection ~ 3100 5300
+Wire Wire Line
+	5800 4800 6000 4800
+Wire Wire Line
+	4500 4800 4600 4800
+Wire Wire Line
+	4900 4650 5000 4650
+Wire Wire Line
+	5800 4650 5800 4550
+Wire Wire Line
+	2850 5300 2850 5400
+Wire Wire Line
+	5000 4650 5100 4650
+Wire Wire Line
+	5000 5300 5500 5300
+Wire Wire Line
+	4500 5300 5000 5300
+Wire Wire Line
+	5500 5300 5750 5300
+Wire Wire Line
+	5500 4800 5750 4800
+Wire Wire Line
+	2850 4500 2850 4900
+Wire Wire Line
+	5750 5300 6000 5300
+Wire Wire Line
+	6000 5300 6250 5300
+Wire Wire Line
+	6000 4800 6250 4800
+Wire Wire Line
+	3500 5300 4500 5300
+Wire Wire Line
+	5750 4800 5800 4800
+Wire Wire Line
+	3100 4500 3600 4500
+Wire Wire Line
+	3100 5300 3500 5300
+$Comp
+L stmbl:+5V #PWR?
+U 1 1 5CE08F86
+P 6100 3150
+AR Path="/5BAEB4FB/5CDEF8C0/5CE08F86" Ref="#PWR?"  Part="1" 
+AR Path="/5BAEB4FB/5CE08F86" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 6100 3000 50  0001 C CNN
+F 1 "+5V" H 6100 3290 50  0000 C CNN
+F 2 "" H 6100 3150 50  0000 C CNN
+F 3 "" H 6100 3150 50  0000 C CNN
+	1    6100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3150 6250 3150
+Wire Wire Line
+	6850 3150 7050 3150
+$Comp
+L stmbl:GNDPWR #PWR0147
+U 1 1 5CE0AE1D
+P 2850 5400
+F 0 "#PWR0147" H 2850 5200 50  0001 C CNN
+F 1 "GNDPWR" H 2854 5246 50  0000 C CNN
+F 2 "" H 2850 5350 50  0001 C CNN
+F 3 "" H 2850 5350 50  0001 C CNN
+	1    2850 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:GNDPWR #PWR0148
+U 1 1 5CE0B7DB
+P 6550 3550
+F 0 "#PWR0148" H 6550 3350 50  0001 C CNN
+F 1 "GNDPWR" H 6554 3396 50  0000 C CNN
+F 2 "" H 6550 3500 50  0001 C CNN
+F 3 "" H 6550 3500 50  0001 C CNN
+	1    6550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3450 6550 3550
+$Comp
+L stmbl:C C?
+U 1 1 5CE0CDD3
+P 7900 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE0CDD3" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE0CDD3" Ref="C17"  Part="1" 
+F 0 "C17" H 7925 3500 50  0000 L CNN
+F 1 "10µ" H 7925 3300 50  0000 L CNN
+F 2 "stmbl:C_0805" H 7938 3250 30  0001 C CNN
+F 3 "" H 7900 3400 60  0000 C CNN
+F 4 "25V" H 7900 3400 60  0001 C CNN "Voltage"
+F 5 "" H 7900 3400 60  0001 C CNN "InternalName"
+F 6 "" H 7900 3400 60  0001 C CNN "Manufacturer No"
+F 7 "" H 7900 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 7900 3400 60  0001 C CNN "Tolerance"
+F 9 "" H -550 -150 50  0001 C CNN "Description"
+F 10 "" H -550 -150 50  0001 C CNN "Manufacturer"
+	1    7900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE0CDE4
+P 7150 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE0CDE4" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE0CDE4" Ref="C14"  Part="1" 
+F 0 "C14" H 7175 3500 50  0000 L CNN
+F 1 "100n" H 7175 3300 50  0000 L CNN
+F 2 "stmbl:C_0603" H 7188 3250 30  0001 C CNN
+F 3 "" H 7150 3400 60  0000 C CNN
+F 4 "" H 7150 3400 60  0001 C CNN "InternalName"
+F 5 "" H 7150 3400 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 7150 3400 60  0001 C CNN "Voltage"
+F 7 "" H 7150 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 7150 3400 60  0001 C CNN "Tolerance"
+F 9 "" H -550 -150 50  0001 C CNN "Description"
+F 10 "" H -550 -150 50  0001 C CNN "Manufacturer"
+	1    7150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE0CDF5
+P 7650 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE0CDF5" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE0CDF5" Ref="C16"  Part="1" 
+F 0 "C16" H 7675 3500 50  0000 L CNN
+F 1 "10µ" H 7675 3300 50  0000 L CNN
+F 2 "stmbl:C_0805" H 7688 3250 30  0001 C CNN
+F 3 "" H 7650 3400 60  0000 C CNN
+F 4 "25V" H 7650 3400 60  0001 C CNN "Voltage"
+F 5 "" H 7650 3400 60  0001 C CNN "InternalName"
+F 6 "" H 7650 3400 60  0001 C CNN "Manufacturer No"
+F 7 "" H 7650 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 7650 3400 60  0001 C CNN "Tolerance"
+F 9 "" H -550 -150 50  0001 C CNN "Description"
+F 10 "" H -550 -150 50  0001 C CNN "Manufacturer"
+	1    7650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE0CE17
+P 7400 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE0CE17" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE0CE17" Ref="C15"  Part="1" 
+F 0 "C15" H 7425 3500 50  0000 L CNN
+F 1 "2.2µ" H 7425 3300 50  0000 L CNN
+F 2 "stmbl:C_0603" H 7438 3250 30  0001 C CNN
+F 3 "" H 7400 3400 60  0000 C CNN
+F 4 "35V" H 7400 3400 60  0001 C CNN "Voltage"
+F 5 "" H 7400 3400 60  0001 C CNN "InternalName"
+F 6 "" H 7400 3400 60  0001 C CNN "Manufacturer No"
+F 7 "" H 7400 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 7400 3400 60  0001 C CNN "Tolerance"
+F 9 "" H -550 -150 50  0001 C CNN "Description"
+F 10 "" H -550 -150 50  0001 C CNN "Manufacturer"
+	1    7400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3650 7400 3550
+Wire Wire Line
+	7150 3550 7150 3650
+Connection ~ 7150 3150
+Wire Wire Line
+	7650 3650 7650 3550
+Connection ~ 7400 3650
+Wire Wire Line
+	7050 3150 7150 3150
+Wire Wire Line
+	7900 3650 7900 3550
+Connection ~ 7650 3650
+Connection ~ 7650 3150
+Wire Wire Line
+	7150 3250 7150 3150
+Wire Wire Line
+	7650 3250 7650 3150
+Wire Wire Line
+	7900 3150 7900 3250
+Wire Wire Line
+	7400 3250 7400 3150
+Connection ~ 7400 3150
+Wire Wire Line
+	7150 3650 7400 3650
+Wire Wire Line
+	7150 3150 7400 3150
+Wire Wire Line
+	7400 3650 7650 3650
+Wire Wire Line
+	7650 3650 7900 3650
+Wire Wire Line
+	7650 3150 7900 3150
+Wire Wire Line
+	7400 3150 7650 3150
+Connection ~ 7050 3150
+$Comp
+L stmbl:GNDPWR #PWR0149
+U 1 1 5CE14F4C
+P 7400 3650
+F 0 "#PWR0149" H 7400 3450 50  0001 C CNN
+F 1 "GNDPWR" H 7404 3496 50  0000 C CNN
+F 2 "" H 7400 3600 50  0001 C CNN
+F 3 "" H 7400 3600 50  0001 C CNN
+	1    7400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE15AD2
+P 8150 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE15AD2" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE15AD2" Ref="C18"  Part="1" 
+F 0 "C18" H 8175 3500 50  0000 L CNN
+F 1 "100n" H 8175 3300 50  0000 L CNN
+F 2 "stmbl:C_0603" H 8188 3250 30  0001 C CNN
+F 3 "" H 8150 3400 60  0000 C CNN
+F 4 "" H 8150 3400 60  0001 C CNN "InternalName"
+F 5 "" H 8150 3400 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 8150 3400 60  0001 C CNN "Voltage"
+F 7 "" H 8150 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 8150 3400 60  0001 C CNN "Tolerance"
+F 9 "" H 450 -150 50  0001 C CNN "Description"
+F 10 "" H 450 -150 50  0001 C CNN "Manufacturer"
+	1    8150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE1610B
+P 8400 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE1610B" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE1610B" Ref="C19"  Part="1" 
+F 0 "C19" H 8425 3500 50  0000 L CNN
+F 1 "100n" H 8425 3300 50  0000 L CNN
+F 2 "stmbl:C_0603" H 8438 3250 30  0001 C CNN
+F 3 "" H 8400 3400 60  0000 C CNN
+F 4 "" H 8400 3400 60  0001 C CNN "InternalName"
+F 5 "" H 8400 3400 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 8400 3400 60  0001 C CNN "Voltage"
+F 7 "" H 8400 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 8400 3400 60  0001 C CNN "Tolerance"
+F 9 "" H 700 -150 50  0001 C CNN "Description"
+F 10 "" H 700 -150 50  0001 C CNN "Manufacturer"
+	1    8400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE164C6
+P 8650 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE164C6" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE164C6" Ref="C20"  Part="1" 
+F 0 "C20" H 8675 3500 50  0000 L CNN
+F 1 "100n" H 8675 3300 50  0000 L CNN
+F 2 "stmbl:C_0603" H 8688 3250 30  0001 C CNN
+F 3 "" H 8650 3400 60  0000 C CNN
+F 4 "" H 8650 3400 60  0001 C CNN "InternalName"
+F 5 "" H 8650 3400 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 8650 3400 60  0001 C CNN "Voltage"
+F 7 "" H 8650 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 8650 3400 60  0001 C CNN "Tolerance"
+F 9 "" H 950 -150 50  0001 C CNN "Description"
+F 10 "" H 950 -150 50  0001 C CNN "Manufacturer"
+	1    8650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE168C9
+P 8900 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE168C9" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE168C9" Ref="C21"  Part="1" 
+F 0 "C21" H 8925 3500 50  0000 L CNN
+F 1 "100n" H 8925 3300 50  0000 L CNN
+F 2 "stmbl:C_0603" H 8938 3250 30  0001 C CNN
+F 3 "" H 8900 3400 60  0000 C CNN
+F 4 "" H 8900 3400 60  0001 C CNN "InternalName"
+F 5 "" H 8900 3400 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 8900 3400 60  0001 C CNN "Voltage"
+F 7 "" H 8900 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 8900 3400 60  0001 C CNN "Tolerance"
+F 9 "" H 1200 -150 50  0001 C CNN "Description"
+F 10 "" H 1200 -150 50  0001 C CNN "Manufacturer"
+	1    8900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C?
+U 1 1 5CE16C66
+P 9150 3400
+AR Path="/5BAEB4FB/5CDEF8C0/5CE16C66" Ref="C?"  Part="1" 
+AR Path="/5BAEB4FB/5CE16C66" Ref="C22"  Part="1" 
+F 0 "C22" H 9175 3500 50  0000 L CNN
+F 1 "100n" H 9175 3300 50  0000 L CNN
+F 2 "stmbl:C_0603" H 9188 3250 30  0001 C CNN
+F 3 "" H 9150 3400 60  0000 C CNN
+F 4 "" H 9150 3400 60  0001 C CNN "InternalName"
+F 5 "" H 9150 3400 60  0001 C CNN "Manufacturer No"
+F 6 "50V" H 9150 3400 60  0001 C CNN "Voltage"
+F 7 "" H 9150 3400 60  0001 C CNN "Source"
+F 8 "X5R" H 9150 3400 60  0001 C CNN "Tolerance"
+F 9 "" H 1450 -150 50  0001 C CNN "Description"
+F 10 "" H 1450 -150 50  0001 C CNN "Manufacturer"
+	1    9150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3150 8150 3150
+Wire Wire Line
+	9150 3150 9150 3250
+Connection ~ 7900 3150
+Wire Wire Line
+	7900 3650 8150 3650
+Wire Wire Line
+	9150 3650 9150 3550
+Connection ~ 7900 3650
+Wire Wire Line
+	8900 3550 8900 3650
+Connection ~ 8900 3650
+Wire Wire Line
+	8900 3650 9150 3650
+Wire Wire Line
+	8650 3550 8650 3650
+Connection ~ 8650 3650
+Wire Wire Line
+	8650 3650 8900 3650
+Wire Wire Line
+	8400 3550 8400 3650
+Connection ~ 8400 3650
+Wire Wire Line
+	8400 3650 8650 3650
+Wire Wire Line
+	8150 3550 8150 3650
+Connection ~ 8150 3650
+Wire Wire Line
+	8150 3650 8400 3650
+Wire Wire Line
+	8150 3150 8150 3250
+Connection ~ 8150 3150
+Wire Wire Line
+	8150 3150 8400 3150
+Wire Wire Line
+	8400 3150 8400 3250
+Connection ~ 8400 3150
+Wire Wire Line
+	8400 3150 8650 3150
+Wire Wire Line
+	8650 3150 8650 3250
+Connection ~ 8650 3150
+Wire Wire Line
+	8650 3150 8900 3150
+Connection ~ 8900 3150
+Wire Wire Line
+	8900 3150 9150 3150
+Wire Wire Line
+	8900 3150 8900 3250
 $EndSCHEMATC
