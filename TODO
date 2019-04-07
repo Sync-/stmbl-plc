@@ -1,0 +1,35 @@
+-Power +24V to the egde of the connector so it is switchable with p-FETs
+-Logic +24V on two pins of the connector so that the CPUs can boot without Power +24V
+-Shared GND
+-Chained SPI (CLK/MISO is parallel to all slaves, MOSI is broken at each connector)
+	-Every slave uses two transmitters on MISO/SOSI
+	-MISO transmitter needs TX enable on GPIO
+	-SN65C1168E or similar
+	-Two broken pin on slave with two GPIOs (end detection)
+-Parallel half-duplex UART, RS485 (half duplex RS485 driver eg SP3485)
+
+-Optional 2nd fast SPI (SN65C1168E/SN75C1168/SN7534051)
+	-if not used pins need to be bridged on card (quesion: needs passthrough plug on empty cards then)
+	-doesn't work with just 32 pins
+
+-LMI is terminated on master
+-LSC might need terminating on each backplane board (1k?/lowpass)
+
+PINOUT:
+
++24V 	+24V	Switched power power
++24V 	+24V
++24V 	+24V
+GND   	GND
+GND   	GND
+GND   	GND
++24VL	+24VL	Logic power
+LSI+	LSI-	MOSI (polarity changeable), broken, non optional
+LSO+	LSO-	Slave out (SOSI), broken, non optional
+GND	GND
+LSC+	LSC-	Clock (parallel), non optional
+LMI+	LMI-	Master in (parallel), non optional
+GND	GND
+UA1+	UA1-	UART, non optional
+SDO	SDI	Slave detect out, in
+EST	GND	Estop inactive when high, slaves can pull low for ESTOP
