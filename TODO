@@ -1,16 +1,10 @@
 -Power +24V to the egde of the connector so it is switchable with p-FETs
 -Logic +24V on two pins of the connector so that the CPUs can boot without Power +24V
 -Shared GND
--Chained SPI (CLK/MISO is parallel to all slaves, MOSI is broken at each connector)
+-Chained SPI (CLK/MISO is parallel to all slaves, MOSI is broken at each connector) (SN65C1168E/SN75C1168/SN7534051)
 	-Every slave uses two transmitters on MISO/SOSI
 	-MISO transmitter needs TX enable on GPIO
-	-SN65C1168E or similar
-	-Two broken pin on slave with two GPIOs (end detection)
 -Parallel half-duplex UART, RS485 (half duplex RS485 driver eg SP3485)
-
--Optional 2nd fast SPI (SN65C1168E/SN75C1168/SN7534051)
-	-if not used pins need to be bridged on card (quesion: needs passthrough plug on empty cards then)
-	-doesn't work with just 32 pins
 
 -LMI is terminated on master
 -LSC might need terminating on each backplane board (1k?/lowpass)
@@ -30,6 +24,39 @@ GND	GND
 LSC+	LSC-	Clock (parallel), non optional
 LMI+	LMI-	Master in (parallel), non optional
 GND	GND
+LCS+  LCS-  chip select
 UA1+	UA1-	UART, non optional
-SDO	SDI	Slave detect out, in
 EST	GND	Estop inactive when high, slaves can pull low for ESTOP
+
+
+startup/config:
+master:
+slave_id = 0
+MSO = 1
+while(!uart.timeout)
+	conf slave(254)
+	slave(254).id = slave_id
+	slave(slave_id++).LSO = 1
+
+slave(slave_id).LSO_TX_EN = 1
+slave(*).spi_mode = spi
+
+
+slave:
+spi_mode = io
+LSO = 0
+id = 254
+while(LSI == 0);
+uart.start()
+
+
+pcb size:
+backplane top <-> front bot = 85mm
+pcb width = 88
+front width = 98 >= X >= 04
+
+
+
+
+backplane:
+fan holes
