@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name 16do-rescue)(type Legacy)(uri ${KIPRJMOD}/16do-rescue.lib)(options "")(descr ""))
 )

@@ -40,37 +40,33 @@ F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 2750 5850 50  0001 C CNN
 	1    2650 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 3400 6750 2    50   Input ~ 0
-OUT0
-Text GLabel 3400 6050 2    50   Input ~ 0
-OUT1
-Text GLabel 3400 6250 2    50   Input ~ 0
-OUT2
-Text GLabel 3400 6650 2    50   Input ~ 0
-OUT3
-Text GLabel 3400 3900 2    50   Input ~ 0
-OUT4
-Text GLabel 3400 3200 2    50   Input ~ 0
-OUT5
-Text GLabel 3400 3400 2    50   Input ~ 0
-OUT6
-Text GLabel 3400 3800 2    50   Input ~ 0
-OUT7
-Text GLabel 3400 3300 2    50   Input ~ 0
-OUT8
-Text GLabel 3400 3700 2    50   Input ~ 0
-OUT9
-Text GLabel 3400 3600 2    50   Input ~ 0
-OUT10
-Text GLabel 3400 3500 2    50   Input ~ 0
-OUT11
-Text GLabel 3400 6150 2    50   Input ~ 0
-OUT12
-Text GLabel 3400 6550 2    50   Input ~ 0
-OUT13
 Text GLabel 3400 6450 2    50   Input ~ 0
-OUT14
+OUT0
 Text GLabel 3400 6350 2    50   Input ~ 0
+OUT1
+Text GLabel 3400 6150 2    50   Input ~ 0
+OUT2
+Text GLabel 3400 6550 2    50   Input ~ 0
+OUT3
+Text GLabel 3400 3600 2    50   Input ~ 0
+OUT4
+Text GLabel 3400 3500 2    50   Input ~ 0
+OUT5
+Text GLabel 3400 3900 2    50   Input ~ 0
+OUT6
+Text GLabel 3400 3700 2    50   Input ~ 0
+OUT7
+Text GLabel 3400 3800 2    50   Input ~ 0
+OUT9
+Text GLabel 3400 3200 2    50   Input ~ 0
+OUT11
+Text GLabel 3400 6250 2    50   Input ~ 0
+OUT12
+Text GLabel 3400 6650 2    50   Input ~ 0
+OUT13
+Text GLabel 3400 6750 2    50   Input ~ 0
+OUT14
+Text GLabel 3400 6050 2    50   Input ~ 0
 OUT15
 Wire Wire Line
 	3300 3000 3400 3000
@@ -296,28 +292,6 @@ Wire Wire Line
 Connection ~ 1550 2600
 Wire Wire Line
 	1550 2600 1200 2600
-$Comp
-L stmbl:+24V #PWR0115
-U 1 1 5C9319FE
-P 3400 4850
-F 0 "#PWR0115" H 3400 4700 50  0001 C CNN
-F 1 "+24V" H 3415 5023 50  0000 C CNN
-F 2 "" H 3400 4850 50  0001 C CNN
-F 3 "" H 3400 4850 50  0001 C CNN
-	1    3400 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L stmbl:+24V #PWR0116
-U 1 1 5C931F36
-P 3400 2000
-F 0 "#PWR0116" H 3400 1850 50  0001 C CNN
-F 1 "+24V" H 3415 2173 50  0000 C CNN
-F 2 "" H 3400 2000 50  0001 C CNN
-F 3 "" H 3400 2000 50  0001 C CNN
-	1    3400 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 4050 2200 4150
 Wire Wire Line
@@ -399,8 +373,6 @@ Wire Wire Line
 	4950 1750 4950 1700
 Connection ~ 4950 1700
 Wire Wire Line
-	4950 1700 5150 1700
-Wire Wire Line
 	4600 2050 4600 2100
 Wire Wire Line
 	4600 2100 4950 2100
@@ -416,20 +388,6 @@ Wire Wire Line
 Connection ~ 4950 2100
 Wire Wire Line
 	4950 2100 5150 2100
-$Comp
-L stmbl:+24V #PWR0119
-U 1 1 5C947AA5
-P 5150 1700
-F 0 "#PWR0119" H 5150 1550 50  0001 C CNN
-F 1 "+24V" H 5165 1873 50  0000 C CNN
-F 2 "" H 5150 1700 50  0001 C CNN
-F 3 "" H 5150 1700 50  0001 C CNN
-	1    5150 1700
-	1    0    0    -1  
-$EndComp
-Connection ~ 5150 1700
-Wire Wire Line
-	5150 1700 5300 1700
 $Comp
 L stmbl:GNDPWR #PWR0120
 U 1 1 5C947F18
@@ -504,11 +462,11 @@ Wire Wire Line
 	6050 2100 6050 2050
 Connection ~ 5650 2100
 Text GLabel 1200 2300 0    50   Input ~ 0
-SPI_SCK
+SPI2_SCK
 Text GLabel 1200 2400 0    50   Input ~ 0
-SPI_MOSI
+SPI2_MOSI
 Text GLabel 1200 5350 0    50   Input ~ 0
-SPI_MISO
+SPI2_MISO
 Text GLabel 1200 2850 0    50   Input ~ 0
 EN_OUT
 Text GLabel 1200 2950 0    50   Input ~ 0
@@ -558,7 +516,7 @@ $EndComp
 Wire Wire Line
 	2000 5350 1200 5350
 Text GLabel 1200 2600 0    50   Input ~ 0
-SPI_CS_OUT
+SPI2_CS
 $Comp
 L 16do-rescue:Mounting_Hole-Mechanical MK11
 U 1 1 5CDEA813
@@ -581,4 +539,72 @@ F 3 "" H 6350 3750 50  0001 C CNN
 	1    6350 3750
 	1    0    0    -1  
 $EndComp
+$Comp
+L stmbl:+VDC #PWR0125
+U 1 1 5D969C91
+P 3400 2000
+F 0 "#PWR0125" H 3400 1900 50  0001 C CNN
+F 1 "+VDC" H 3400 2275 50  0000 C CNN
+F 2 "" H 3400 2000 50  0001 C CNN
+F 3 "" H 3400 2000 50  0001 C CNN
+	1    3400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:+VDC #PWR0126
+U 1 1 5D96A962
+P 3400 4850
+F 0 "#PWR0126" H 3400 4750 50  0001 C CNN
+F 1 "+VDC" H 3400 5125 50  0000 C CNN
+F 2 "" H 3400 4850 50  0001 C CNN
+F 3 "" H 3400 4850 50  0001 C CNN
+	1    3400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1700 5100 1700
+$Comp
+L stmbl:+VDC #PWR0127
+U 1 1 5D96B181
+P 5100 1700
+F 0 "#PWR0127" H 5100 1600 50  0001 C CNN
+F 1 "+VDC" H 5100 1975 50  0000 C CNN
+F 2 "" H 5100 1700 50  0001 C CNN
+F 3 "" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 1700
+Wire Wire Line
+	5100 1700 5300 1700
+$Comp
+L stmbl:+3.3V #PWR0128
+U 1 1 5D96C350
+P 2450 1950
+F 0 "#PWR0128" H 2450 1800 50  0001 C CNN
+F 1 "+3.3V" H 2465 2123 50  0000 C CNN
+F 2 "" H 2450 1950 50  0001 C CNN
+F 3 "" H 2450 1950 50  0001 C CNN
+	1    2450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1950 2450 2100
+$Comp
+L stmbl:+3.3V #PWR0129
+U 1 1 5D96F879
+P 2450 4800
+F 0 "#PWR0129" H 2450 4650 50  0001 C CNN
+F 1 "+3.3V" H 2465 4973 50  0000 C CNN
+F 2 "" H 2450 4800 50  0001 C CNN
+F 3 "" H 2450 4800 50  0001 C CNN
+	1    2450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4800 2450 4950
+Text GLabel 3400 3300 2    50   Input ~ 0
+OUT10
+Text GLabel 3400 3400 2    50   Input ~ 0
+OUT8
 $EndSCHEMATC
