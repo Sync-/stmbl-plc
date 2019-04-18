@@ -168,7 +168,7 @@ Text GLabel 7200 5250 2    50   Input ~ 0
 USART_EN
 Wire Wire Line
 	7200 6350 7100 6350
-Text GLabel 5700 5450 0    50   Input ~ 0
+Text GLabel 5700 6050 0    50   Input ~ 0
 EN_OUT
 Wire Wire Line
 	6300 6850 6300 6900
@@ -355,7 +355,7 @@ RCLK
 Text GLabel 5700 5650 0    50   Input ~ 0
 OE
 Wire Wire Line
-	5700 5450 5800 5450
+	5700 6050 5800 6050
 Wire Wire Line
 	5700 5250 5800 5250
 Wire Wire Line
@@ -628,10 +628,10 @@ Wire Wire Line
 	5700 6250 5800 6250
 Text GLabel 5700 5950 0    50   Input ~ 0
 ESTOP_IN
-Text GLabel 5700 6050 0    50   Input ~ 0
+Text GLabel 5700 5550 0    50   Input ~ 0
 ESTOP_OUT
 Wire Wire Line
-	5700 6050 5800 6050
+	5700 5550 5800 5550
 Wire Wire Line
 	5800 5950 5700 5950
 Wire Wire Line

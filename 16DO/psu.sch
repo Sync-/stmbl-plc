@@ -28,7 +28,7 @@ F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 6750 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 16do-rescue:+3.3V-power #PWR?
+L stmbl:+3.3V #PWR?
 U 1 1 5BAEB613
 P 7150 2550
 AR Path="/5BAEB613" Ref="#PWR?"  Part="1" 
@@ -55,8 +55,6 @@ F 3 "" H 6200 2550 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6200 2550 6350 2550
-Wire Wire Line
-	6950 2550 7150 2550
 Wire Wire Line
 	6650 2850 6650 2950
 $Comp
@@ -148,8 +146,6 @@ Wire Wire Line
 	7750 3050 7750 2950
 Connection ~ 7500 3050
 Wire Wire Line
-	7150 2550 7250 2550
-Wire Wire Line
 	8000 3050 8000 2950
 Connection ~ 7750 3050
 Connection ~ 7750 2550
@@ -174,7 +170,6 @@ Wire Wire Line
 	7750 2550 8000 2550
 Wire Wire Line
 	7500 2550 7750 2550
-Connection ~ 7150 2550
 $Comp
 L stmbl:C C?
 U 1 1 5CE15AD2
@@ -815,4 +810,9 @@ Wire Wire Line
 	9000 3050 9250 3050
 Connection ~ 9000 3050
 Connection ~ 9250 3050
+Wire Wire Line
+	6950 2550 7150 2550
+Connection ~ 7150 2550
+Wire Wire Line
+	7150 2550 7250 2550
 $EndSCHEMATC
