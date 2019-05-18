@@ -182,12 +182,8 @@ Wire Wire Line
 	1950 5400 2050 5400
 Wire Wire Line
 	2550 5400 2700 5400
-Text GLabel 1900 5300 0    50   Input ~ 0
-LSI+
 Text GLabel 2700 5000 2    50   Input ~ 0
 LSO+
-Text GLabel 1900 5200 0    50   Input ~ 0
-LSC+
 Text GLabel 2700 4900 2    50   Input ~ 0
 LMI+
 Text GLabel 1900 4600 0    50   Input ~ 0
@@ -202,12 +198,8 @@ Text GLabel 2700 4600 2    50   Input ~ 0
 UA1-
 Text GLabel 1900 4900 0    50   Input ~ 0
 LMI-
-Text GLabel 2700 5200 2    50   Input ~ 0
-LSC-
 Text GLabel 1900 5000 0    50   Input ~ 0
 LSO-
-Text GLabel 2700 5300 2    50   Input ~ 0
-LSI-
 Wire Wire Line
 	1900 4500 2050 4500
 Wire Wire Line
@@ -487,7 +479,7 @@ UA1+
 Text GLabel 8750 2450 2    50   Input ~ 0
 UA1-
 Text GLabel 9500 1800 1    50   Input ~ 0
-USART1_EN
+USART_EN
 $Comp
 L stmbl:R R54
 U 1 1 5D919196
@@ -727,27 +719,27 @@ F 3 "" H 9800 4900 50  0001 C CNN
 	5    9800 4900
 	1    0    0    -1  
 $EndComp
-Text GLabel 7450 5600 0    50   Input ~ 0
+Text GLabel 7450 6150 0    50   Input ~ 0
 LSI+
-Text GLabel 7450 5400 0    50   Input ~ 0
+Text GLabel 7450 5950 0    50   Input ~ 0
 LSI-
 Wire Wire Line
 	7450 5400 7600 5400
 Wire Wire Line
 	7450 5600 7600 5600
-Text GLabel 8300 5500 2    50   Input ~ 0
+Text GLabel 8300 6050 2    50   Input ~ 0
 DSPI_MOSI
 Wire Wire Line
 	8100 5500 8300 5500
-Text GLabel 7450 6150 0    50   Input ~ 0
+Text GLabel 7450 5600 0    50   Input ~ 0
 LSC+
-Text GLabel 7450 5950 0    50   Input ~ 0
+Text GLabel 7450 5400 0    50   Input ~ 0
 LSC-
 Wire Wire Line
 	7450 5950 7600 5950
 Wire Wire Line
 	7450 6150 7600 6150
-Text GLabel 8300 6050 2    50   Input ~ 0
+Text GLabel 8300 5500 2    50   Input ~ 0
 DSPI_SCK
 Wire Wire Line
 	8300 6050 8100 6050
@@ -839,9 +831,9 @@ Wire Wire Line
 	6850 5900 6950 5900
 Wire Wire Line
 	6850 6200 6950 6200
-Text GLabel 6850 5900 0    50   Input ~ 0
+Text GLabel 6850 5350 0    50   Input ~ 0
 LSC-
-Text GLabel 6850 6200 0    50   Input ~ 0
+Text GLabel 6850 5650 0    50   Input ~ 0
 LSC+
 $Comp
 L stmbl:R R51
@@ -858,9 +850,9 @@ Wire Wire Line
 	6850 5350 6950 5350
 Wire Wire Line
 	6850 5650 6950 5650
-Text GLabel 6850 5350 0    50   Input ~ 0
+Text GLabel 6850 5900 0    50   Input ~ 0
 LSI-
-Text GLabel 6850 5650 0    50   Input ~ 0
+Text GLabel 6850 6200 0    50   Input ~ 0
 LSI+
 $Comp
 L stmbl:ADM4168E U8
@@ -1023,4 +1015,12 @@ $EndComp
 NoConn ~ 7650 3000
 NoConn ~ 8150 2900
 NoConn ~ 8150 3100
+Text GLabel 1900 5300 0    50   Input ~ 0
+LSC+
+Text GLabel 2700 5300 2    50   Input ~ 0
+LSC-
+Text GLabel 2700 5200 2    50   Input ~ 0
+LSI-
+Text GLabel 1900 5200 0    50   Input ~ 0
+LSI+
 $EndSCHEMATC
