@@ -10,23 +10,23 @@
 -LSC might need terminating on each backplane board (1k?/lowpass)
 
 PINOUT:
-
-+24V 	+24V	Switched power power
-+24V 	+24V
-+24V 	+24V
-GND   	GND
-GND   	GND
-GND   	GND
-+24VL	+24VL	Logic power
-LSI+	LSI-	MOSI (polarity changeable), broken, non optional
-LSO+	LSO-	Slave out (SOSI), broken, non optional
-GND	GND
-LSC+	LSC-	Clock (parallel), non optional
-LMI+	LMI-	Master in (parallel), non optional
-GND	GND
-LCS+  LCS-  chip select
-UA1+	UA1-	UART, non optional
-EST	GND	Estop inactive when high, slaves can pull low for ESTOP
+     B     A
+1  +24V  +24V	Switched IO power
+2  +24V  +24V
+3  +24V  +24V
+4  GND   GND
+5  GND   GND
+6  GND   GND
+7  +24VL +24VL  Logic power
+8  LSC+	 LSC-   Clock (parallel), non optional
+9  LSI+	 LSI-   Slave in from prev. LSO, broken, non optional
+10 GND	 GND
+11 LSO+  LSO-   Slave out to next LSI, broken, non optional
+12 LMI-	 LMI+   Master in (parallel), non optional
+13 GND   GND
+14 LCS+  LCS-   chip select (parallel), non optional
+15 UA1+  UA1-   UART, non optional
+16 EST  GND     Estop inactive when high, pullup on master, slaves can pull low for ESTOP
 
 
 startup/config:
